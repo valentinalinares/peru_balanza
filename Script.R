@@ -1,16 +1,8 @@
 install.packages(c("credentials", "gitcreds", "usethis"))
 library(gitcreds)
-gitcreds_set()
-#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
-gitcreds::gitcreds_get()
-usethis::gh_token_help()  # Detalles del token configurado.
-library(usethis)
-usethis::create_project("~/Downloads/peru_balanza")
 usethis::use_git()
-usethis::use_github()
-usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
-usethis::use_git_remote("origin", url = "https://github.com/valentinalinares/peru_balanza.git")
-gert::git_push()
+usethis::use_github(protocol = "https")
+
 
 library(tidyverse)
 library(ggthemes)
