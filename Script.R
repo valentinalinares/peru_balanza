@@ -1,9 +1,3 @@
-install.packages(c("credentials", "gitcreds", "usethis"))
-library(gitcreds)
-usethis::use_git()
-usethis::use_github(protocol = "https")
-
-
 library(tidyverse)
 library(ggthemes)
 library(scales)
